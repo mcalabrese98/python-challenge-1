@@ -6,7 +6,7 @@ This is a python code for a Food Truck Menu provided by the AI Course for our 2n
 ## Features
  * input an integer to select a menu item
  * enter the wuantity of items you'd like
- *provide errors when users select an incorrect input
+ * provide errors when users select an incorrect input
  * provide a receipt of items ordered and the total cost
 
 ## Language 
