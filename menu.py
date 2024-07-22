@@ -217,8 +217,8 @@ print("This is what we are preparing for you.\n")
 # Uncomment the following line to check the structure of the order
 #print(order)
 
-print("Item name                 | Price  | Quantity")
-print("--------------------------|--------|----------")
+print("Item name                 |  Price  | Quantity")
+print("--------------------------|---------|----------")
 
 # 6. Loop through the items in the customer's order
 for item in order:
@@ -229,16 +229,16 @@ for item in order:
 
     # 8. Calculate the number of spaces for formatted printing
     num_item_name_spaces = 26 - len(items_name)
-    num_price_spaces = 10 - len(f"{price:.2f}")
+    num_price_spaces = 7 - len(f"{price:.2f}")
     num_quantity_spaces = 10 - len(str(quantity))
 
     # 9. Create space strings
-    item_name_spaces = " " * num_item_spaces
+    item_name_spaces = " " * num_item_name_spaces
     prices_spaces = " " * num_price_spaces
     quantity_spaces = " " * num_quantity_spaces
 
     # 10. Print the item name, price, and quantity
-    print(f"{item_name}{item_name_spaces} ${price:.2f}{prices_spaces} {quantity}{quantity_spaces}")
+    print(f"{item_name}{item_name_spaces}| ${price:.2f}{prices_spaces}| {quantity}{quantity_spaces}")
 
 
 # 11. Calculate the cost of the order using list comprehension
